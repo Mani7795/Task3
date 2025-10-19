@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Microburbs Property Dashboard</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; }
+      h1 { color: #222; }
+      form { margin-bottom: 20px; }
+      table { border-collapse: collapse; width: 100%; }
+      th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+      th { background-color: #f2f2f2; }
+      tr:nth-child(even) { background-color: #fafafa; }
+      .desc { max-width: 500px; white-space: pre-line; font-size: 0.9em; color: #444; }
+    </style>
+  </head>
+  <body>
+    <h1>🏡 Microburbs Property Dashboard</h1>
+
+    <form method="get">
+      <label>Enter Suburb: </label>
+      <input type="text" name="suburb" placeholder="Belmont North" />
+      <button type="submit">Search</button>
+    </form>
+
+    {% if suburb %}
+      <h2>Results for {{ suburb }}</h2>
+    {% endif %}
+
+    {% if properties %}
+      <table>
+        <thead>
+          <tr>
+            <th>Address</th>
+            <th>Type</th>
+            <th>Price</th>
+            <th>Beds</th>
+            <th>Baths</th>
+            <th>Garage</th>
+            <th>Land Size</th>
+            <th>Listing Date</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p in properties %}
+            <tr>
+              <td>{{ p.area_name }}</td>
+              <td>{{ p.property_type }}</td>
+              <td>${{ "{:,}".format(p.price) if p.price != "-" else "-" }}</td>
+              <td>{{ p.bedrooms }}</td>
+              <td>{{ p.bathrooms }}</td>
+              <td>{{ p.garage_spaces }}</td>
+              <td>{{ p.land_size }}</td>
+              <td>{{ p.listing_date }}</td>
+              <td class="desc">{{ p.description[:300] }}...</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p>No properties found for {{ suburb }}.</p>
+    {% endif %}
+  </body>
+</html>
