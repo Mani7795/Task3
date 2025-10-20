@@ -80,10 +80,18 @@
 <body>
   <h1>🏡 Microburbs Property Dashboard</h1>
   <form method="get">
-    <label for="suburb">Enter Suburb:</label>
-    <input type="text" name="suburb" id="suburb" placeholder="Belmont North">
+    <label>Suburb:</label>
+    <input type="text" name="suburb" placeholder="Belmont North" value="{{ suburb or '' }}">
+
+    <label>Property Type:</label>
+    <select name="property_type">
+        <option value="">All</option>
+        <option value="House" {% if property_type == 'House' %}selected{% endif %}>House</option>
+        <option value="Unit" {% if property_type == 'Unit' %}selected{% endif %}>Unit</option>
+    </select>
+
     <button type="submit">Search</button>
-  </form>
+    </form>
 
   {% if suburb %}
     <h2>Results for {{ suburb }}</h2>

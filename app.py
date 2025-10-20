@@ -128,6 +128,7 @@ def create_map(properties, suburb):
 @app.route("/", methods=["GET"])
 def home():
     suburb = request.args.get("suburb", default="Belmont North", type=str)
+    property_type = request.args.get("property_type", default="", type=str)
     params = {"suburb": suburb}
 
     try:
