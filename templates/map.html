@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5b9d5bb321875454b1faf5d846ec8398 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 700.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5b9d5bb321875454b1faf5d846ec8398" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5b9d5bb321875454b1faf5d846ec8398 = L.map(
+                "map_5b9d5bb321875454b1faf5d846ec8398",
+                {
+                    center: [-33.018024405, 151.67025436625],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_231f361e192c3d7abd6eccb538b81c8a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_231f361e192c3d7abd6eccb538b81c8a.addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var marker_b42e81ab1c84689de347fb8a52084915 = L.marker(
+                [-33.01402088, 151.67272249],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_e3d497e8433e6e0f2293fe4a018e2560 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b5cf87388e37d569fa6ece4dc28de0a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd360d28172c4565c372474c87ab68e1 = $(`<div id="html_fd360d28172c4565c372474c87ab68e1" style="width: 100.0%; height: 100.0%;">         <b>3 Dalton Close, Belmont North, NSW</b><br>         Type: House<br>         Price: $997,500.0<br>         Beds: 3.0 | Baths: 1.0         </div>`)[0];
+                popup_2b5cf87388e37d569fa6ece4dc28de0a.setContent(html_fd360d28172c4565c372474c87ab68e1);
+            
+        
+
+        marker_b42e81ab1c84689de347fb8a52084915.bindPopup(popup_2b5cf87388e37d569fa6ece4dc28de0a)
+        ;
+
+        
+    
+    
+            marker_b42e81ab1c84689de347fb8a52084915.bindTooltip(
+                `<div>
+                     3 Dalton Close, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b42e81ab1c84689de347fb8a52084915.setIcon(icon_e3d497e8433e6e0f2293fe4a018e2560);
+            
+    
+            var marker_389cdb3dc7b0ce452b397fada5ee8d08 = L.marker(
+                [-33.01183148, 151.67286749],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_e0d3c13c4cc37d01c3b27cc4e96cc8fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7b921340470ec543b9bab37b2354c3b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_62347e6d345f7ba2f3e80906243be392 = $(`<div id="html_62347e6d345f7ba2f3e80906243be392" style="width: 100.0%; height: 100.0%;">         <b>25 Seacroft Close, Belmont North, NSW</b><br>         Type: House<br>         Price: $1,250,000.0<br>         Beds: 4.0 | Baths: 2.0         </div>`)[0];
+                popup_b7b921340470ec543b9bab37b2354c3b.setContent(html_62347e6d345f7ba2f3e80906243be392);
+            
+        
+
+        marker_389cdb3dc7b0ce452b397fada5ee8d08.bindPopup(popup_b7b921340470ec543b9bab37b2354c3b)
+        ;
+
+        
+    
+    
+            marker_389cdb3dc7b0ce452b397fada5ee8d08.bindTooltip(
+                `<div>
+                     25 Seacroft Close, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_389cdb3dc7b0ce452b397fada5ee8d08.setIcon(icon_e0d3c13c4cc37d01c3b27cc4e96cc8fa);
+            
+    
+            var marker_bda8fc7fad036473710059800544ce42 = L.marker(
+                [-33.01649474, 151.67157968],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_9198428ba8b63aa195f24aa369c39ba9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1b6d24730e23d3da496cd8509ea8995 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a380bcb7f5af55460a787b53cf64fffb = $(`<div id="html_a380bcb7f5af55460a787b53cf64fffb" style="width: 100.0%; height: 100.0%;">         <b>67 Old Belmont Road, Belmont North, NSW</b><br>         Type: House<br>         Price: $890,000.0<br>         Beds: 3.0 | Baths: 1.0         </div>`)[0];
+                popup_d1b6d24730e23d3da496cd8509ea8995.setContent(html_a380bcb7f5af55460a787b53cf64fffb);
+            
+        
+
+        marker_bda8fc7fad036473710059800544ce42.bindPopup(popup_d1b6d24730e23d3da496cd8509ea8995)
+        ;
+
+        
+    
+    
+            marker_bda8fc7fad036473710059800544ce42.bindTooltip(
+                `<div>
+                     67 Old Belmont Road, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bda8fc7fad036473710059800544ce42.setIcon(icon_9198428ba8b63aa195f24aa369c39ba9);
+            
+    
+            var marker_994cb858309ccd9efbf9dc0b3aae2c88 = L.marker(
+                [-33.01204354, 151.66851581],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_4f27a01e999c908764592c114af43381 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_521e96e37c2e51571f065d11c4363084 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e70c1e1d11543acb7fb1c47bf4d83b41 = $(`<div id="html_e70c1e1d11543acb7fb1c47bf4d83b41" style="width: 100.0%; height: 100.0%;">         <b>17 Dulungra Avenue, Belmont North, NSW</b><br>         Type: House<br>         Price: $1,350,000.0<br>         Beds: 5.0 | Baths: 3.0         </div>`)[0];
+                popup_521e96e37c2e51571f065d11c4363084.setContent(html_e70c1e1d11543acb7fb1c47bf4d83b41);
+            
+        
+
+        marker_994cb858309ccd9efbf9dc0b3aae2c88.bindPopup(popup_521e96e37c2e51571f065d11c4363084)
+        ;
+
+        
+    
+    
+            marker_994cb858309ccd9efbf9dc0b3aae2c88.bindTooltip(
+                `<div>
+                     17 Dulungra Avenue, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_994cb858309ccd9efbf9dc0b3aae2c88.setIcon(icon_4f27a01e999c908764592c114af43381);
+            
+    
+            var marker_48ba928e4c9b9dcda78889550a9a9200 = L.marker(
+                [-33.02006063, 151.6800542],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_546c994777f89e5fd3a0661a06a6f14e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_713e1594c0ed93614886081bedd6b5c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d89352b2412cbfd7c1baadcfc313618a = $(`<div id="html_d89352b2412cbfd7c1baadcfc313618a" style="width: 100.0%; height: 100.0%;">         <b>5 Pinnaroo Close, Belmont North, NSW</b><br>         Type: House<br>         Price: $1,200,000.0<br>         Beds: 4.0 | Baths: 3.0         </div>`)[0];
+                popup_713e1594c0ed93614886081bedd6b5c9.setContent(html_d89352b2412cbfd7c1baadcfc313618a);
+            
+        
+
+        marker_48ba928e4c9b9dcda78889550a9a9200.bindPopup(popup_713e1594c0ed93614886081bedd6b5c9)
+        ;
+
+        
+    
+    
+            marker_48ba928e4c9b9dcda78889550a9a9200.bindTooltip(
+                `<div>
+                     5 Pinnaroo Close, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_48ba928e4c9b9dcda78889550a9a9200.setIcon(icon_546c994777f89e5fd3a0661a06a6f14e);
+            
+    
+            var marker_3e33195b57c3ace75e0446d92a352331 = L.marker(
+                [-33.02289234, 151.66747673],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_b9372041cbf5080b1c51196e8f9d0aeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2ced6c5b7aeb400399af1a2fb78f735 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c746c4a5bf2076619fc51f319a92e118 = $(`<div id="html_c746c4a5bf2076619fc51f319a92e118" style="width: 100.0%; height: 100.0%;">         <b>Unit 2, 1 Vincent Street, Belmont North, NSW</b><br>         Type: Unit<br>         Price: $599,000.0<br>         Beds: 2.0 | Baths: 1.0         </div>`)[0];
+                popup_f2ced6c5b7aeb400399af1a2fb78f735.setContent(html_c746c4a5bf2076619fc51f319a92e118);
+            
+        
+
+        marker_3e33195b57c3ace75e0446d92a352331.bindPopup(popup_f2ced6c5b7aeb400399af1a2fb78f735)
+        ;
+
+        
+    
+    
+            marker_3e33195b57c3ace75e0446d92a352331.bindTooltip(
+                `<div>
+                     Unit 2, 1 Vincent Street, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e33195b57c3ace75e0446d92a352331.setIcon(icon_b9372041cbf5080b1c51196e8f9d0aeb);
+            
+    
+            var marker_ec4e9956647f86c946163532797cde44 = L.marker(
+                [-33.02379398, 151.66499999],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_86d7e2f13e10a333164db7cd3c068edb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e0b8818842062f581c8c6252685a4c0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_59de7cb85b741f840ddd70a63d21df95 = $(`<div id="html_59de7cb85b741f840ddd70a63d21df95" style="width: 100.0%; height: 100.0%;">         <b>46 Patrick Street, Belmont North, NSW</b><br>         Type: House<br>         Price: $920,000.0<br>         Beds: 4.0 | Baths: 1.0         </div>`)[0];
+                popup_2e0b8818842062f581c8c6252685a4c0.setContent(html_59de7cb85b741f840ddd70a63d21df95);
+            
+        
+
+        marker_ec4e9956647f86c946163532797cde44.bindPopup(popup_2e0b8818842062f581c8c6252685a4c0)
+        ;
+
+        
+    
+    
+            marker_ec4e9956647f86c946163532797cde44.bindTooltip(
+                `<div>
+                     46 Patrick Street, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec4e9956647f86c946163532797cde44.setIcon(icon_86d7e2f13e10a333164db7cd3c068edb);
+            
+    
+            var marker_25a5a999c99e6cf8c7dcac2c58605ffa = L.marker(
+                [-33.02305765, 151.66381854],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_3a0efc1d1bee83582e0c0745a8978e78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5724b7d78b57d07564cfabb2714c4bbe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eef60640bc4a1b0aaf3a70d3f7c9e787 = $(`<div id="html_eef60640bc4a1b0aaf3a70d3f7c9e787" style="width: 100.0%; height: 100.0%;">         <b>380-384 Pacific Highway, Belmont North, NSW</b><br>         Type: Unit<br>         Price: $1,800,000.0<br>         Beds: nan | Baths: nan         </div>`)[0];
+                popup_5724b7d78b57d07564cfabb2714c4bbe.setContent(html_eef60640bc4a1b0aaf3a70d3f7c9e787);
+            
+        
+
+        marker_25a5a999c99e6cf8c7dcac2c58605ffa.bindPopup(popup_5724b7d78b57d07564cfabb2714c4bbe)
+        ;
+
+        
+    
+    
+            marker_25a5a999c99e6cf8c7dcac2c58605ffa.bindTooltip(
+                `<div>
+                     380-384 Pacific Highway, Belmont North, NSW
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25a5a999c99e6cf8c7dcac2c58605ffa.setIcon(icon_3a0efc1d1bee83582e0c0745a8978e78);
+            
+    
+            map_5b9d5bb321875454b1faf5d846ec8398.fitBounds(
+                [[-33.01402088, 151.67272249], [-33.01183148, 151.67286749], [-33.01649474, 151.67157968], [-33.01204354, 151.66851581], [-33.02006063, 151.6800542], [-33.02289234, 151.66747673], [-33.02379398, 151.66499999], [-33.02305765, 151.66381854]],
+                {}
+            );
+        
+    
+            var marker_d0d03cbacc2d0fdfa7da708a7afe8aaf = L.marker(
+                [-33.0336722, 151.6607356],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_d88ef81c9b31b11ba4be216c80d64dde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fff89fd7684df9f9b294e2217c2c3001 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dac76f3205550515be7126bfce3a10e8 = $(`<div id="html_dac76f3205550515be7126bfce3a10e8" style="width: 100.0%; height: 100.0%;">🛒 <b>Aldi</b><br>Grocery Store</div>`)[0];
+                popup_fff89fd7684df9f9b294e2217c2c3001.setContent(html_dac76f3205550515be7126bfce3a10e8);
+            
+        
+
+        marker_d0d03cbacc2d0fdfa7da708a7afe8aaf.bindPopup(popup_fff89fd7684df9f9b294e2217c2c3001)
+        ;
+
+        
+    
+    
+                marker_d0d03cbacc2d0fdfa7da708a7afe8aaf.setIcon(icon_d88ef81c9b31b11ba4be216c80d64dde);
+            
+    
+            var marker_309b1b0a08e3b5341fc5d6b03304e4dd = L.marker(
+                [-33.0133204, 151.6842967],
+                {
+}
+            ).addTo(map_5b9d5bb321875454b1faf5d846ec8398);
+        
+    
+            var icon_e78b359c538482f7e13adbdde6ff281f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_927e4c396b0071ac96a64a1a9aa90319 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05942fd3e90790a27358bcfb8d9c4696 = $(`<div id="html_05942fd3e90790a27358bcfb8d9c4696" style="width: 100.0%; height: 100.0%;">🛒 <b>Coles</b><br>Grocery Store</div>`)[0];
+                popup_927e4c396b0071ac96a64a1a9aa90319.setContent(html_05942fd3e90790a27358bcfb8d9c4696);
+            
+        
+
+        marker_309b1b0a08e3b5341fc5d6b03304e4dd.bindPopup(popup_927e4c396b0071ac96a64a1a9aa90319)
+        ;
+
+        
+    
+    
+                marker_309b1b0a08e3b5341fc5d6b03304e4dd.setIcon(icon_e78b359c538482f7e13adbdde6ff281f);
+            
+</script>
+</html>
